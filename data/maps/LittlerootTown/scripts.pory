@@ -1021,3 +1021,26 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Let's go to my LAB.$"
 
 `
+script LittlerootTown_EventScript_MillyHouseSign {
+	lockall
+	msgbox ("MILLY'S HOUSE")
+	releaseall
+}
+
+script LittlerootTown_EventScript_FencedArea {
+	lockall
+	msgbox (format("WARNING!\pThere may be wild Pokemon beyond these fence.\pDo not go beyond this point without your own Pokemon!\p- Milly"))
+	releaseall
+}
+
+script LittlerootTown_EventScript_FencedAreaNoPokemonTrigger {
+	lockall
+	msgbox (format("It's dangerous to go out without a Pokemon."))
+	applymovement(OBJ_EVENT_ID_PLAYER, FencedAreaMoveAway)
+	waitmovement (0)
+	releaseall
+}
+
+movement FencedAreaMoveAway {
+	walk_left * 2
+}

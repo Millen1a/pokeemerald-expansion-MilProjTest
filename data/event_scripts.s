@@ -1156,3 +1156,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/Route100/scripts.inc"
+
+	.include "data/maps/MillyHouse/scripts.inc"
+
+	.include "data/maps/OldaleRiver/scripts.inc"

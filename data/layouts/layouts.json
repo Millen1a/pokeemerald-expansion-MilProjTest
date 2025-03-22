@@ -4420,6 +4420,26 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route100/border.bin",
       "blockdata_filepath": "data/layouts/Route100/map.bin"
+    },
+    {
+      "id": "LAYOUT_MILLY_HOUSE",
+      "name": "MillyHouse_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/MillyHouse/border.bin",
+      "blockdata_filepath": "data/layouts/MillyHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLDALE_RIVER",
+      "name": "OldaleRiver_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/OldaleRiver/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleRiver/map.bin"
     }
   ]
 }

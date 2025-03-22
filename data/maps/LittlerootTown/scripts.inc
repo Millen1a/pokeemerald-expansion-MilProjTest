@@ -2040,3 +2040,62 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 # 1021 "data/maps/LittlerootTown/scripts.pory"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_EventScript_MillyHouseSign::
+# 1025 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1026 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_MillyHouseSign_Text_0
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	return
+
+
+LittlerootTown_EventScript_FencedArea::
+# 1031 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1032 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_FencedArea_Text_0
+# 1033 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	return
+
+
+LittlerootTown_EventScript_FencedAreaNoPokemonTrigger::
+# 1037 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1038 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_FencedAreaNoPokemonTrigger_Text_0
+# 1039 "data/maps/LittlerootTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FencedAreaMoveAway
+# 1040 "data/maps/LittlerootTown/scripts.pory"
+	waitmovement 0
+# 1041 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	return
+
+
+# 1044 "data/maps/LittlerootTown/scripts.pory"
+FencedAreaMoveAway:
+# 1045 "data/maps/LittlerootTown/scripts.pory"
+	walk_left
+# 1045 "data/maps/LittlerootTown/scripts.pory"
+	walk_left
+	step_end
+
+LittlerootTown_EventScript_MillyHouseSign_Text_0:
+# 1026 "data/maps/LittlerootTown/scripts.pory"
+	.string "MILLY'S HOUSE$"
+
+LittlerootTown_EventScript_FencedArea_Text_0:
+# 1032 "data/maps/LittlerootTown/scripts.pory"
+	.string "WARNING!\p"
+	.string "There may be wild Pokemon beyond these\n"
+	.string "fence.\p"
+	.string "Do not go beyond this point without\n"
+	.string "your own Pokemon!\p"
+	.string "- Milly$"
+
+LittlerootTown_EventScript_FencedAreaNoPokemonTrigger_Text_0:
+# 1038 "data/maps/LittlerootTown/scripts.pory"
+	.string "It's dangerous to go out without a Pokemon.$"
